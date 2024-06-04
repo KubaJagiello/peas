@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "peas_backend"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Jagiello <jakub.jagiello789@gmail.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "peas_app" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "^2.0.30"
+alembic = "^1.13.1"
+fastapi = {version = "^0.115.6", extras = ["standard"]}
+pytest = "^8.2.2"
+pytest-cov = "^6.0.0"
+pytest-mock = "^3.14.0"
+uvicorn = "^0.34.0"
+pydantic = "^2.8.2"
+black = "^24.4.2"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+fastapi-pagination = "^0.12.32"
+
+
+[tool.poetry.group.dev.dependencies]
+openpyxl = "^3.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+
+[tool.coverage.run]
+omit = [
+    "peas_app/database/alembic/*",
+    "peas_app/api/dependencies.py"
+]
+
+
+[tool.mypy]
+exclude = "tests/"
+
