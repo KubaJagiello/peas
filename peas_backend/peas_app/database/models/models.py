@@ -58,7 +58,7 @@ class Product(BaseEntity):
     proteins: Mapped[float] = mapped_column(Float, nullable=False)
     fats: Mapped[float] = mapped_column(Float, nullable=False)
     carbohydrates: Mapped[float] = mapped_column(Float, nullable=False)
-    sodium: Mapped[float] = mapped_column(Float, nullable=False)
+    salt: Mapped[float] = mapped_column(Float, nullable=False)
     calories: Mapped[float] = mapped_column(Float, nullable=False)
 
     # many-to-many relation

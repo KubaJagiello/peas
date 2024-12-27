@@ -13,7 +13,7 @@ const EditProductForm: React.FC<EditProductFormProps> = ({product, onClose}) => 
   const [name, setProductName] = useState(product.name);
   const [proteins, setProtein] = useState(product.proteins);
   const [carbohydrates, setCarbs] = useState(product.carbohydrates);
-  const [sodium, setSodium] = useState(product.sodium);
+  const [salt, setSalt] = useState(product.salt);
   const [fats, setFats] = useState(product.fats);
   const productService = new ProductService();
 
@@ -38,7 +38,7 @@ const EditProductForm: React.FC<EditProductFormProps> = ({product, onClose}) => 
       proteins: proteins,
       carbohydrates: carbohydrates,
       fats: fats,
-      sodium: sodium
+      salt: salt
     };
 
     try {

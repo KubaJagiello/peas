@@ -51,7 +51,7 @@ def product_request() -> ProductRequest:
         proteins=1.0,
         carbohydrates=1.0,
         fats=1.0,
-        sodium=1.0,
+        salt=1.0,
     )
 
 
@@ -63,7 +63,7 @@ def product_response() -> ProductResponse:
         proteins=1.0,
         fats=1.0,
         carbohydrates=1.0,
-        sodium=1.0,
+        salt=1.0,
         calories=17.0,
     )
 
@@ -93,7 +93,7 @@ def recipe_response() -> RecipeResponse:
                     proteins=1.0,
                     fats=1.0,
                     carbohydrates=1.0,
-                    sodium=1.0,
+                    salt=1.0,
                     calories=17.0,
                 ),
                 quantity=100,
@@ -106,7 +106,7 @@ def recipe_response() -> RecipeResponse:
                     proteins=2.0,
                     fats=2.0,
                     carbohydrates=2.0,
-                    sodium=2.0,
+                    salt=2.0,
                     calories=34.0,
                 ),
                 quantity=200,

@@ -13,7 +13,7 @@ class ProductMapper:
             proteins=product.proteins,
             fats=product.fats,
             carbohydrates=product.carbohydrates,
-            sodium=product.sodium,
+            salt=product.salt,
             calories=product.calories,
         )
 
@@ -24,7 +24,7 @@ class ProductMapper:
             proteins=product_request.proteins,
             fats=product_request.fats,
             carbohydrates=product_request.carbohydrates,
-            sodium=product_request.sodium,
+            salt=product_request.salt,
             calories=ProductMapper.calculate_calories(product_request),
         )
 

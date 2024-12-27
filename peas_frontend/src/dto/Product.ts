@@ -4,7 +4,7 @@ export interface Product {
     proteins: number;
     fats: number;
     carbohydrates: number;
-    sodium: number;
+    salt: number;
 }
 
 export interface AddProduct {
@@ -12,5 +12,5 @@ export interface AddProduct {
     proteins: number;
     fats: number;
     carbohydrates: number;
-    sodium: number;
+    salt: number;
 }

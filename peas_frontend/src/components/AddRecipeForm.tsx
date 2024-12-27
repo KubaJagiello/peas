@@ -39,7 +39,7 @@ const AddRecipeForm: React.FC<AddRecipeFormProps> = ({recipe, onClose}) => {
     proteins: number;
     carbohydrates: number;
     fats: number;
-    sodium: number;
+    salt: number;
     calories: number;
   }
 

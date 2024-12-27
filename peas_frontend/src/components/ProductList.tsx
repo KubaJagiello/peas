@@ -11,7 +11,7 @@ interface ListProduct {
   proteins: number;
   carbohydrates: number;
   fats: number;
-  sodium: number;
+  salt: number;
   calories: number;
 }
 
@@ -124,7 +124,7 @@ const ProductList: React.FC = () => {
                     <Table.Cell>{product.proteins}</Table.Cell>
                     <Table.Cell>{product.carbohydrates}</Table.Cell>
                     <Table.Cell>{product.fats}</Table.Cell>
-                    <Table.Cell>{product.sodium}</Table.Cell>
+                    <Table.Cell>{product.salt}</Table.Cell>
                     <Table.Cell>{NutrientsUtil.countCalories(product)}</Table.Cell>
                   </Table.Row>
               ))}
@@ -146,7 +146,7 @@ const ProductList: React.FC = () => {
                         proteins: currentProduct.proteins,
                         fats: currentProduct.fats,
                         carbohydrates: currentProduct.carbohydrates,
-                        sodium: currentProduct.sodium
+                        salt: currentProduct.salt
                       }}
                   />
                 </Modal.Body>

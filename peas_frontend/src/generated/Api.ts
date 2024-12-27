@@ -89,12 +89,12 @@ export interface ProductRequest {
    */
   carbohydrates: number;
   /**
-   * Sodium
-   * Sodium content in grams per 100g
+   * Salt
+   * salt content in grams per 100g
    * @min 0
    * @max 100
    */
-  sodium: number;
+  salt: number;
 }
 
 /** ProductResponse */
@@ -125,10 +125,10 @@ export interface ProductResponse {
    */
   carbohydrates: number;
   /**
-   * Sodium
-   * Sodium content in grams per 100g
+   * Salt
+   * salt content in grams per 100g
    */
-  sodium: number;
+  salt: number;
   /**
    * Calories
    * Caloric content in kcal per 100g
