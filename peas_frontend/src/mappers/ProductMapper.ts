@@ -21,7 +21,7 @@ export function mapProductResponseToProduct(productResponse: ProductResponse): P
     proteins: productResponse.proteins,
     fats: productResponse.fats,
     carbohydrates: productResponse.carbohydrates,
-    sodium: productResponse.sodium,
+    salt: productResponse.salt,
   }
 }
 
@@ -31,7 +31,7 @@ export function mapProductToProductRequest(product: Product): ProductRequest {
     proteins: product.proteins,
     fats: product.fats,
     carbohydrates: product.carbohydrates,
-    sodium: product.sodium
+    salt: product.salt
   }
 }
 
@@ -41,6 +41,6 @@ export function mapAddProductToProductRequest(addProduct: AddProduct): ProductRe
     proteins: addProduct.proteins,
     fats: addProduct.fats,
     carbohydrates: addProduct.carbohydrates,
-    sodium: addProduct.sodium
+    salt: addProduct.salt
   }
 }

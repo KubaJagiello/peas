@@ -10,7 +10,7 @@ def test_update_product(
     product_repository.add(product_1)
     product_1.fats = 3.0
     product_1.name = "different name"
-    product_1.sodium = 1.0
+    product_1.salt = 1.0
     product_repository.update(product_1)
 
     retrieved_product = product_repository.get_by_id(_id=123)
@@ -89,6 +89,6 @@ def _products_are_equal(product_a: Product, product_b: Product) -> bool:
         and product_a.proteins == product_b.proteins
         and product_a.fats == product_b.fats
         and product_a.carbohydrates == product_b.carbohydrates
-        and product_a.sodium == product_b.sodium
+        and product_a.salt == product_b.salt
         and product_a.calories == product_b.calories
     )

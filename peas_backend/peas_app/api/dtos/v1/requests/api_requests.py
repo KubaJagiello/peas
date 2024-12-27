@@ -13,13 +13,13 @@ class ProductRequest(BaseModel):
     carbohydrates: float = Field(
         ge=0.0, le=100.0, description="Carbohydrate content in grams"
     )
-    sodium: float = Field(
-        ge=0.0, le=100.0, description="Sodium content in grams per 100g"
+    salt: float = Field(
+        ge=0.0, le=100.0, description="salt content in grams per 100g"
     )
 
     @model_validator(mode="after")
     def check_total_nutrient_values(self) -> Self:
-        if self.proteins + self.fats + self.carbohydrates + self.sodium > 100:
+        if self.proteins + self.fats + self.carbohydrates + self.salt > 100:
             raise ValueError(
                 "The sum of proteins, fats, and carbohydrates cannot exceed 100g"
             )

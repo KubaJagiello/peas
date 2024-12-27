@@ -27,7 +27,7 @@ def product_1() -> Product:
         proteins=1.0,
         fats=1.0,
         carbohydrates=1.0,
-        sodium=1.0,
+        salt=1.0,
         calories=17.0,
     )
 
@@ -40,7 +40,7 @@ def product_2() -> Product:
         proteins=2.0,
         fats=2.0,
         carbohydrates=2.0,
-        sodium=2.0,
+        salt=2.0,
         calories=34.0,
     )
 
@@ -164,7 +164,7 @@ def test_to_recipe_response_with_products(
                     proteins=product_1.proteins,
                     fats=product_1.fats,
                     carbohydrates=product_1.carbohydrates,
-                    sodium=product_1.sodium,
+                    salt=product_1.salt,
                     calories=product_1.calories,
                 ),
                 quantity=recipe_1.product_associations[0].quantity,
@@ -177,7 +177,7 @@ def test_to_recipe_response_with_products(
                     proteins=product_2.proteins,
                     fats=product_2.fats,
                     carbohydrates=product_2.carbohydrates,
-                    sodium=product_2.sodium,
+                    salt=product_2.salt,
                     calories=product_2.calories,
                 ),
                 quantity=recipe_1.product_associations[1].quantity,

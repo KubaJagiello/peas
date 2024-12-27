@@ -11,7 +11,7 @@ class ProductResponse(BaseModel):
     carbohydrates: float = Field(
         description="Carbohydrate content in grams per 100g"
     )
-    sodium: float = Field(description="Sodium content in grams per 100g")
+    salt: float = Field(description="salt content in grams per 100g")
     calories: float = Field(description="Caloric content in kcal per 100g")
 
 

@@ -43,7 +43,7 @@ def product_1() -> Product:
         proteins=2.0,
         fats=2.0,
         carbohydrates=2.0,
-        sodium=2.0,
+        salt=2.0,
         calories=34.0,
     )
 
@@ -56,7 +56,7 @@ def product_2() -> Product:
         proteins=3.0,
         fats=3.0,
         carbohydrates=3.0,
-        sodium=3.0,
+        salt=3.0,
         calories=51.0,
     )
 
@@ -69,7 +69,7 @@ def product_3() -> Product:
         proteins=4.0,
         fats=4.0,
         carbohydrates=4.0,
-        sodium=4.0,
+        salt=4.0,
         calories=68.0,
     )
 

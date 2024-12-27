@@ -11,7 +11,7 @@ def test_to_product_response():
         proteins=1.0,
         fats=1.0,
         carbohydrates=1.0,
-        sodium=1.0,
+        salt=1.0,
         calories=17.0,
     )
     expected_product_response = ProductResponse(
@@ -20,7 +20,7 @@ def test_to_product_response():
         proteins=product.proteins,
         fats=product.fats,
         carbohydrates=product.carbohydrates,
-        sodium=product.sodium,
+        salt=product.salt,
         calories=product.calories,
     )
 
@@ -35,7 +35,7 @@ def test_to_product():
         proteins=1.0,
         fats=1.0,
         carbohydrates=1.0,
-        sodium=1.0,
+        salt=1.0,
     )
     expected_product = Product(
         name=product_request.name.lower(),
@@ -60,7 +60,7 @@ def test_calculate_calories():
         proteins=1.0,
         fats=1.0,
         carbohydrates=1.0,
-        sodium=1.0,
+        salt=1.0,
     )
     expected_calories = 17.0
 

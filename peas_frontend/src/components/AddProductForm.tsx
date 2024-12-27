@@ -10,7 +10,7 @@ interface AddProductFormProps {
     proteins?: string;
     carbohydrates?: string;
     fats?: string;
-    sodium?: string;
+    salt?: string;
   };
 }
 
@@ -19,7 +19,7 @@ const AddProductForm: React.FC<AddProductFormProps> = ({product}) => {
   const [proteins, setProtein] = useState(product?.proteins || '');
   const [carbohydrates, setCarbs] = useState(product?.carbohydrates || '');
   const [fats, setFats] = useState(product?.fats || '');
-  const [sodium, setSodium] = useState(product?.sodium || '');
+  const [salt, setSalt] = useState(product?.salt || '');
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
@@ -34,7 +34,7 @@ const AddProductForm: React.FC<AddProductFormProps> = ({product}) => {
       proteins: parseFloat(proteins),
       carbohydrates: parseFloat(carbohydrates),
       fats: parseFloat(fats),
-      sodium: parseFloat(sodium),
+      salt: parseFloat(salt),
     };
 
     try {
@@ -48,7 +48,7 @@ const AddProductForm: React.FC<AddProductFormProps> = ({product}) => {
     setProtein('');
     setCarbs('');
     setFats('');
-    setSodium('');
+    setSalt('');
 
     setShowSuccess(true);
     setTimeout(() => setShowSuccess(false), 2000);
@@ -111,15 +111,15 @@ const AddProductForm: React.FC<AddProductFormProps> = ({product}) => {
           </div>
           <div>
             <div className="mb-2 block">
-              <Label htmlFor="sodium" value="Salt per 100g"/>
+              <Label htmlFor="salt" value="Salt per 100g"/>
             </div>
             <TextInput
-                id="sodium"
+                id="salt"
                 type="text"
                 sizing="sm"
                 required
-                value={sodium}
-                onChange={(e) => setSodium(e.target.value)}
+                value={salt}
+                onChange={(e) => setSalt(e.target.value)}
             />
           </div>
           <Button type="submit">Submit</Button>

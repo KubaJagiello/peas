@@ -49,14 +49,14 @@ def get_product_requests() -> list[ProductRequest]:
         proteins = row[indexes[ColumnName.PROTEINS]]
         fats = row[indexes[ColumnName.FAT]]
         carbohydrates = row[indexes[ColumnName.CARBOHYDRATES]]
-        sodium = row[indexes[ColumnName.SALT]]
+        salt = row[indexes[ColumnName.SALT]]
 
         product = ProductRequest(
             name=name,
             proteins=float(proteins),
             fats=float(fats),
             carbohydrates=float(carbohydrates),
-            sodium=float(sodium),
+            salt=float(salt),
         )
         product_requests.append(product)
 
